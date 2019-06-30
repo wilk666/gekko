@@ -49,7 +49,7 @@ const broadcast = data => {
   if(_.isEmpty(data)) {
     return;
   }
-
+console.warn('data', data);
   const payload = JSON.stringify(data);
 
   wss.clients.forEach(ws => {
